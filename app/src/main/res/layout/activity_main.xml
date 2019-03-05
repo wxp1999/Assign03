@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2495d1"
+    android:orientation="vertical"
+    android:weightSum="8"
+    tools:context="mg.studio.weatherappdesign.MainActivity">
+
+    <TextView
+        android:id="@+id/tv_week_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center"
+        android:text="Sunday"
+        android:textAllCaps="true"
+        android:textColor="#10000000"
+        android:textSize="36sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="105dp"
+        android:layout_height="83dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_week_1"
+        app:srcCompat="@drawable/notification" />
+
+    <TextView
+        android:id="@+id/tv_news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="152dp"
+        android:layout_marginLeft="152dp"
+        android:layout_marginEnd="157dp"
+        android:layout_marginRight="157dp"
+        android:text="You have 1 appointment"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="114dp"
+        android:layout_marginLeft="114dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/button_selector"
+        android:gravity="center"
+        android:onClick="btnClick"
+        android:paddingLeft="40dp"
+        android:paddingRight="40dp"
+        android:text="Go to Calendar"
+        android:textColor="#50ffffff"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_news" />
+
+
+    <ImageView
+        android:id="@+id/img_weather_condition_1"
+        android:layout_width="98dp"
+        android:layout_height="107dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="192dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/rainy_up" />
+
+    <TextView
+        android:id="@+id/tv_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginLeft="28dp"
+        android:text="Location"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_weather_condition_1" />
+
+    <TextView
+        android:id="@+id/tv_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="03/03/2018"
+        android:textColor="@android:color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_location" />
+
+
+    <TextView
+        android:id="@+id/temperature_of_the_day_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginRight="36dp"
+        android:gravity="right"
+        android:text="28"
+        android:textColor="@android:color/white"
+        android:textSize="100sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="192dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:gravity="right"
+        android:text="°C"
+        android:textColor="@android:color/white"
+        android:textSize="22sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="102dp"
+        android:layout_marginTop="368dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/design"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="409dp"
+        android:layout_height="279dp"
+        android:background="@android:color/white"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintVertical_bias="0.0">
+
+
+        <ImageView
+            android:id="@+id/img_weather_condition_2"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginLeft="32dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/rainy_small" />
+
+        <TextView
+            android:id="@+id/tv_week_2"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="mon"
+            android:textAllCaps="true"
+            android:textColor="#909090"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/img_weather_condition_2" />
+
+
+        <ImageView
+            android:id="@+id/img_weather_condition_3"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@+id/img_weather_condition_2"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/partly_sunny_small" />
+
+        <TextView
+            android:id="@+id/tv_week_3"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="tue"
+            android:textAllCaps="true"
+            android:textColor="#909090"
+            app:layout_constraintStart_toEndOf="@+id/tv_week_2"
+            app:layout_constraintTop_toBottomOf="@+id/img_weather_condition_3" />
+
+
+        <ImageView
+            android:id="@+id/img_weather_condition_4"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@+id/img_weather_condition_3"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/windy_small" />
+
+        <TextView
+            android:id="@+id/tv_week_4"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="thu"
+            android:textAllCaps="true"
+            android:textColor="#909090"
+            app:layout_constraintStart_toEndOf="@+id/tv_week_3"
+            app:layout_constraintTop_toBottomOf="@+id/img_weather_condition_4" />
+
+
+        <ImageView
+            android:id="@+id/img_weather_condition_5"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@+id/img_weather_condition_4"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/sunny_small" />
+
+        <TextView
+            android:id="@+id/tv_week_5"
+            android:layout_width="60dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="44dp"
+            android:layout_marginLeft="44dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center"
+            android:text="fri"
+            android:textAllCaps="true"
+            android:textColor="#909090"
+            app:layout_constraintStart_toEndOf="@+id/tv_week_4"
+            app:layout_constraintTop_toBottomOf="@+id/img_weather_condition_5" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>
